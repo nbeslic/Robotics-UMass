@@ -46,11 +46,7 @@ function [collision] = checkCollision(theta, L, obstacle)
        
        
        collision = collision1 + collision2;
-       if collision == 2
-           collision = 1;
-       end
-
-       if collision == 1
+       if collision >= 1
            return;
        end
    end
